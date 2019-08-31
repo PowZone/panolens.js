@@ -2021,16 +2021,7 @@ Viewer.prototype = Object.assign( Object.create( THREE.EventDispatcher.prototype
      * @memberOf Viewer
      * @instance
      */
-    loadAsyncRequest: function ( url, callback = () => {} ) {
-
-        const request = new window.XMLHttpRequest();
-        request.onloadend = function ( event ) {
-            callback( event );
-        };
-        request.open( 'GET', url, true );
-        request.send( null );
-
-    },
+    loadAsyncRequest: function ( url, callback ) {},
 
     /**
      * View indicator in upper left
