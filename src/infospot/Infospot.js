@@ -65,7 +65,8 @@ function Infospot ( scale = 300, imageSrc, animated ) {
         texture.image.width = texture.image.naturalWidth || 64;
         texture.image.height = texture.image.naturalHeight || 64;
 
-        this.scale.set( ratio * scale, scale, 1 );
+	// this.scale.set( ratio * scale, scale, 1 ); 
+	this.scale.set( scale, scale, 1 );
 
         textureScale.copy( this.scale );
 
